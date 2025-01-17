@@ -22,8 +22,6 @@ struct SecondView: View {
     }
 }
 
-struct SecondView_Previews: PreviewProvider {
-    static var previews: some View {
-        SecondView().environmentObject(TimerData())
-    }
+#Preview {
+    SecondView().environmentObject(TimerData())
 }
