@@ -18,3 +18,10 @@ for index in 1...20 {
     x -= 1
     print(y)
 }
+
+
+var multiline = """
+          test
+     """
+
+print(multiline)
