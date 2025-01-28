@@ -36,6 +36,11 @@ struct ContentView: View {
                     .padding()
 
                 Picker(selection: $colorIndex, label: Text("Color")) {
+//                    ForEach(0..<colornames.count, id:\.self) { color in
+//                        Text(colornames[color])
+//                            .foregroundColor(colors[color])
+//
+//                    }
                     ForEach (0 ..< colornames.count, id:\.self)  {
                             Text(colornames[$0])
                                 .foregroundColor(colors[$0])
@@ -49,8 +54,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }
