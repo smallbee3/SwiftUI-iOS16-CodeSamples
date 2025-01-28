@@ -16,7 +16,6 @@ struct ContentView: View {
         NavigationStack {
             VStack {
                 Text("Timer count = \(timerData.timeCount)")
-                
                     .font(.largeTitle)
                     .fontWeight(.bold)
                     .padding()
@@ -26,6 +25,7 @@ struct ContentView: View {
                 }
 
                 NavigationLink(destination: SecondView(timerData: timerData)) {
+//                NavigationLink(destination: SecondView()) {
                     Text("Next Screen")
                 }
                 .padding()

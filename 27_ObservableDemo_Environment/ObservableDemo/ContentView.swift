@@ -1,8 +1,8 @@
 //
 //  ContentView.swift
-//  ObservableDemo
+//  27_ObservableDemo
 //
-//  Created by Neil Smyth on 9/12/22.
+//  Created by Clark Song on 1/19/25.
 //
 
 import SwiftUI
@@ -23,7 +23,8 @@ struct ContentView: View {
                 Button(action: resetCount) {
                     Text("Reset Counter")
                 }
-                
+
+//                NavigationLink(destination: SecondView(timerData: timerData)) {
                 NavigationLink(destination: SecondView()) {
                     Text("Next Screen")
                 }
