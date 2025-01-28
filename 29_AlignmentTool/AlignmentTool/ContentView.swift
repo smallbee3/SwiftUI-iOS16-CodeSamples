@@ -1,6 +1,7 @@
 // The SwiftUI Lab
 // Website: https://swiftui-lab.com
 // Article: https://swiftui-lab.com/alignment-guides
+
 import SwiftUI
 
 class Model: ObservableObject {
@@ -397,4 +398,8 @@ enum AlignmentEnum: Equatable {
             return .value(0)
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
