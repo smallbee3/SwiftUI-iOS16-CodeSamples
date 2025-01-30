@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+// 25.4 스위프트 액터 예제 <-> 24.18 for-await loop
 actor TimeStore {
     
     var timeStamps: [Int: Date] = [:]
