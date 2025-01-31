@@ -17,16 +17,16 @@ struct LifecycleDemoApp: App {
             ContentView()
         }
         .onChange(of: scenePhase, perform: { phase in
-                        switch phase {
-                            case .active:
-                                print("Active")
-                            case .inactive:
-                                print("Inactive")
-                            case .background:
-                                print("Background")
-                            default:
-                                print("Unknown scenephase")
-                        }
-                    })
+            switch phase {
+                case .active:
+                    print("Active")
+                case .inactive:
+                    print("Inactive")
+                case .background:
+                    print("Background")
+                default:
+                    print("Unknown scenephase")
+            }
+        })
     }
 }
